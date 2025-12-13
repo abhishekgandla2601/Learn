@@ -1,0 +1,72 @@
+<!-- Radio button validation in JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Validation</title>
+</head>
+<body>
+    <center>
+        <h1><tt>JavaScript Radio Button Validation</tt></h1>
+    </center>
+    <hr>
+    <fieldset>
+        <legend>DOM</legend>
+        <center>
+            <form action="submit.html" onsubmit="return testcase1()" method="post">
+                <table border="3" cellpadding="5">
+                   <tr>
+                    <td><label for="">City|State|country</label></td>
+                    <td>
+                        <select name="" id="A">
+                            <option value="">---city---</option>
+                            <option value="">HYD</option>
+                            <option value="">MUM</option>
+                            <option value="">BAN</option>
+                            <option value="">PUNE</option>
+                        </select>
+                        
+                        <select name="" id="B">
+                            <option value="">---State---</option>
+                            <option value="">TG</option>
+                            <option value="">MH</option>
+                            <option value="">KA</option>
+                            <option value="">AP</option>
+                        </select>
+
+                        
+                        <select name="" id="C">
+                            <option value="">---country---</option>
+                            <option value="">INDIA</option>
+                            <option value="">USA</option>
+                            <option value="">UK</option>
+                            <option value="">CANADA</option>
+                        </select>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td><label for="">Action</label></td>
+                    <td><input type="submit" value="SUMBIT"></td>
+                    <td><input type="reset" value="RESET"></td>
+                   </tr>
+                </table>
+            </form>
+        </center>
+    </fieldset>
+
+    <script>
+        function testcase1() {
+            var select1 = document.getElementById("A")
+            var select2=document.getElementById("B")
+            var select2=document.getElementById("C")
+            if(select1.selectedIndex=="")
+            {
+                window.alert("Dear customer :select")
+            }
+            
+    </script>
+</body>
+</html>
+<!-- "Code is incomplete"   -->
+<!-- select city automatically state and country-->

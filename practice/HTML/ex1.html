@@ -1,0 +1,58 @@
+<!-- Radio button validation in JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Validation</title>
+</head>
+<body>
+    <center>
+        <h1><tt>JavaScript Radio Button Validation</tt></h1>
+    </center>
+    <hr>
+    <fieldset>
+        <legend>DOM</legend>
+        <center>
+            <form action="submit.html" onsubmit="return testcase1()" method="post">
+                <table border="3" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <span id="XYZ" style="color:red;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </fieldset>
+
+    <script>
+        function testcase1() {
+            var mygender = document.getElementsByName("gender");
+            if (!mygender[0].checked && !mygender[1].checked) {
+                window.alert("Dear customer, please select at least one option...");
+                document.getElementById("XYZ").innerHTML = "Dear customer, please select at least one option...";
+                return false; // Prevent form submission
+            } else {
+                document.getElementById("XYZ").innerHTML = "";
+                return true; // Allow form submission
+            }
+        }
+    </script>
+</body>
+</html>
