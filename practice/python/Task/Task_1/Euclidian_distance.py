@@ -6,6 +6,7 @@ p2 = float(input("Enter x2 coordinate: "))
 q1 = float(input("Enter y1 coordinate: "))
 q2 = float(input("Enter y2 coordinate: "))
 
+# euclidean distance formula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 result = (((p1 - q1)**2 + (p2 - q2)**2))
 
 result = result ** 0.5
