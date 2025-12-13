@@ -17,3 +17,6 @@ print("First Name :", first_name)
 print("Last Name :", last_name)
 print("Country :", country)
 print("Age :", age)
+
+# how to check keyword in python in command line
+help("keywords")
