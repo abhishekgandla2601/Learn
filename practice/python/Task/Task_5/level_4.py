@@ -49,3 +49,20 @@ print(it_companies)
 # Reverse the list in descending order using reverse() method
 it_companies.reverse()
 print(it_companies)
+
+# print(it_companies + "#")
+# list can be concatenated with list 
+
+# Slice out the first 3 companies from the list
+
+print(it_companies[0:3]) # first 3 companies from the list
+
+# Slice out the last 3 companies from the list
+print(it_companies[-3:])
+
+
+# Slice out the middle IT company or companies from the list
+print(len(it_companies)//2)
+print(it_companies[5])# middle IT company
+
+# remove the first IT company from the list 
