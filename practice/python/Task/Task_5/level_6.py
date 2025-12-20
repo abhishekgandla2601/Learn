@@ -12,3 +12,8 @@ middle_age = len(ages) // 2
 print(middle_age)
 print(ages[5])
 print(24//2)
+
+print(ages[4])
+print(ages[5])
+print((24+24)//2)
+
