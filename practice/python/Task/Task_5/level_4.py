@@ -66,3 +66,26 @@ print(len(it_companies)//2)
 print(it_companies[5])# middle IT company
 
 # remove the first IT company from the list 
+it_companies.remove("Facebook")
+print(it_companies)
+
+# Remove the middle IT company or companies from the list
+
+print(len(it_companies) // 2)
+print(it_companies[4])
+it_companies.remove("Meta")
+print(it_companies)
+
+# Remove the last IT company from the list
+
+it_companies.pop() # removes the last element of the list
+print(it_companies)
+
+# Remove all IT companies from the list
+it_companies.clear()
+print(it_companies)
+
+# Destroy the IT companies list
+
+del it_companies
+print(it_companies)
