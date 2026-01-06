@@ -95,6 +95,8 @@ print(ages)
 # sorting lists items
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits)
+print("sort")
 fruits.sort()
 print(fruits)
 fruits.sort(reverse=True)
@@ -109,6 +111,7 @@ print(ages)
 
 # sorted() : returns the ordered list without modifying the original list
 fruits = ['banana', 'orange', 'mango', 'lemon']
+print("sorted")
 print(sorted(fruits))
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
