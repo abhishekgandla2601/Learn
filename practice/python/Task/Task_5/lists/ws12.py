@@ -3,3 +3,6 @@ animal = ["Cat", "Dog", "Lion", "Ponda"]
 
 mix = number + animal
 print(mix)
+
+number.extend(animal)
+print(number)
